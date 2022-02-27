@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .section1{
+    background-image: url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100%;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .section1 div{
+    background-color: #111;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container .section1 div h1{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.container .section2, .section3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .section2 .lorem{
+    background-color: white;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: #666;
+}
+
+.container .section2 .lorem p{
+    display: block;
+    text-align: center;
+    padding: 0 40px;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.container .section2 .text-img-container{
+    background-image: url('https://jolly-kalam-23776e.netlify.app/parallaxsite/img/image2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 55vh;
+    width: 100%;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .section2 .text-img-container h1{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.container .section3 .lorem{
+    background-color: #282e34;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: white;
+}
+
+.container .section3 .lorem p{
+    display: block;
+    text-align: center;
+    padding: 0 40px;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.container .section3 .text-img-container{
+    background-image: url('https://jolly-kalam-23776e.netlify.app/parallaxsite/img/image3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 55vh;
+    width: 100%;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .section3 .text-img-container h1{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.container .section4{
+    width: 100%;
+}
+
+.container .section4 .lorem{
+    background-color: #282e34;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: white;
+}
+
+.container .section4 .lorem p{
+    display: block;
+    text-align: center;
+    padding: 0 40px;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+
+.container .section5{
+    background-image: url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100%;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .section5 div{
+    background-color: #111;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container .section5 div h1{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white;
+}
+
+
+[data-anima]{
+    opacity: 0;
+    transition: 2s;
+}
+
+[data-anima="scale-animation"]{
+    transform: scale(0);
+}
+
+[data-anima].animate{
+    opacity: 1;
+    transform: scale(1);
+}
